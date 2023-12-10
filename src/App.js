@@ -6,7 +6,7 @@ import Cor from './components/Cor';
 function App() {
   return (
     <>
-      <div> {/* <Pics /> */} </div>
+      <div> <Pics /> </div>
       <div className='w-1/2 m-auto h-screen'><Cor /></div>
     </>
   );
