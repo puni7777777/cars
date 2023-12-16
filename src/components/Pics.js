@@ -13,7 +13,7 @@ export default function Pics() {
   return (
     <div className='flex justify-center items-center w-screen bg-black'>
       <div>
-        {/* <img src={file} alt='pic' onClick={rand_file} /> */}
+        <img src='' alt='pic' />
       </div>
       <div className='bg-black flex justify-center items-center w-1/2'>
         <button className='h-screen w-screen text-white' onClick={rand_file}>
