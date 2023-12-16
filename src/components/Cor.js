@@ -56,7 +56,7 @@ function Cor() {
         <div className='overflow-hidden relative rounded-2xl'>
             <div className={`flex transition-all duration-1000 ease-in-out h-screen`} style={{ transform: `translatex(-${slide * 100}%)` }}>
                 {file_name.map(s => {
-                    return <img src={s} alt="nopic" style={{ flexShrink: 0 }}/>
+                    return <img src={s} alt="nopic" className="w-screen" style={{ flexShrink: 0 }}/>
                 })}
             </div>
             <div className='absolute top-0 h-full w-full justify-between items-center flex z-10 text-3xl'>
