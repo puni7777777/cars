@@ -8,7 +8,7 @@ function App() {
     <>
       <div className=''>
         <div> <Pics /> </div>
-        {/* <div className='w-screen bg-black m-auto h-screen'><Cor /></div> */}
+        <div className='w-screen bg-black m-auto h-screen'><Cor /></div>
       </div>
     </>
   );

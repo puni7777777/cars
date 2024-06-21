@@ -1,25 +1,26 @@
 import React, { Component, useState } from 'react'
-import file_name from './File_imports';
+// import file_name from './File_imports';
+import gif from './gifs/happy-birthday.gif'
 
 export default function Pics() {
   const [file, setFile] = useState('/static/media/6.24e8657d9c320e19b8aa.jpg');
 
-  function rand_file() {
-    const rand = Math.floor(Math.random() * file_name.length);
+  // function rand_file() {
+  //   const rand = Math.floor(Math.random() * file_name.length);
 
-    setFile(file_name[rand]);
-  }
+  //   setFile(file_name[rand]);
+  // }
 
   return (
     <div className='flex justify-center items-center w-screen bg-black'>
       <div>
-        <img src='' alt='pic' />
+        <img src={gif} alt='pic' className='h-screen' />
       </div>
-      <div className='bg-black flex justify-center items-center w-1/2'>
+      {/* <div className='bg-black flex justify-center items-center w-1/2'>
         <button className='h-screen w-screen text-white' onClick={rand_file}>
           <img src={file} alt="nopic" className='rounded-2xl' style={{ flexShrink: 0 }} />
         </button>
-      </div>
+      </div> */}
     </div>
   )
 }

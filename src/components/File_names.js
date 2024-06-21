@@ -1,3 +1,13 @@
+// Paste the required photos in pics/ folder and 
+// run this file locally to import photos in pics/ folder into the project.
+// This makes a javascript file named "File_imports.js" which contains all the file names in the folder.
+// This script needs to be run whenever the folder pics/ is updated.
+// Make sure to have the necessary permissions to read and write files in your system.
+
+// This script is designed to work with the following folder structure:
+// - pics/
+
+
 const fs = require('fs');
 let dir = "./pics/"      //path directory
 const name = fs.readdirSync(dir);      // console.log(name);
@@ -26,8 +36,8 @@ let arr = arr_imports + arr_exports;
 
 try {
     fs.writeFileSync('./File_imports.js', arr);
+    console.log('Files imported Successfully...');
 } catch (err) {
     console.error(`Failed to write file:`, err);
 }
 
-console.log('Files imported Successfully...');
