@@ -7,6 +7,8 @@
 // This script is designed to work with the following folder structure:
 // - pics/
 
+//in future this script update needs to be automated 
+
 
 const fs = require('fs');
 let dir = "./pics/"      //path directory
